@@ -5,21 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Styles -->
-		<link rel="stylesheet" href="./styles/main.css" />
 		<link rel="stylesheet" href="./styles/normalize.css" />
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/mobile.css" />
 		<title>Landing Page</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<span class="header__logo"> Logo </span>
+				<span class="header__logo">Logo</span>
 
 				<nav>
 					<ul class="header__nav">
@@ -35,7 +29,7 @@
 					</ul>
 				</nav>
 			</header>
-			<main>
+			<main class="main">
 				<!-- Visual designer -->
 				<section class="visual-designer">
 					<!-- Right side -->
@@ -54,22 +48,208 @@
 					</div>
 				</section>
 				<!-- Companies -->
-				<section>
-                    <img src="./imdg/Discord.svg" alt="Discord icon" title="HFSHDFKJSHD">
-                    <img src="./imdg/dribble.svg" alt="error ">
-                    <img src="./imdg/Group 5334google.svg" alt="">
-                    <img src="/imgd/Group 5357.svg" alt="">
-                    <img src="imgd/Group 5360.svg" alt="">
-                    <img src="./imdg/image 1 (Traced)nike.svg" alt="" >
-                </section>
+				<section class="companies">
+					<img src="./img/icons/google.svg" alt="Google icon" />
+					<img src="./img/icons/nike.svg" alt="Nike icon" />
+					<img src="./img/icons/samsung.svg" alt="Samsung icon" />
+					<img src="/img/icons/apple.svg" alt="Apple icon" />
+					<img src="./img/icons/intercom.svg" alt="Intercom icon" />
+					<img src="./img/icons/adidas.svg" alt="Adidas icon" />
+				</section>
 				<!-- About -->
-				<section id="about">about</section>
+				<section class="about">
+					<div class="about__card">
+						<img
+							src="./img/pink-shape.svg"
+							alt="Decorative pink half oval, with an arrow inside"
+						/>
+						<h3>Product design</h3>
+						<p>
+							This is a template Figma file, turned into code using Anima.
+							Learn more at AnimaApp.com
+						</p>
+					</div>
+					<div class="about__card">
+						<img
+							src="./img/orange-shape.svg"
+							alt="Decorative orange quarter round, with an arrow inside"
+						/>
+						<h3>Art direction</h3>
+						<p>
+							This is a template Figma file, turned into code using Anima.
+							Learn more at AnimaApp.com
+						</p>
+					</div>
+					<div class="about__card">
+						<img
+							src="./img/green-shape.svg"
+							alt="Decorative green square with rounded edges with an arrow inside"
+						/>
+						<h3>Visual design</h3>
+						<p>
+							This is a template Figma file, turned into code using Anima.
+							Learn more at AnimaApp.com
+						</p>
+					</div>
+				</section>
 				<!-- Latest Work -->
-				<section id="latest-work">latest work</section>
+				<section class="latest-work">
+					<h2>Latest work</h2>
+					<div class="latest-work__grid">
+						<div class="latest-work__card">
+							<img
+								loading="lazy"
+								src="./img/work-first.jpg"
+								alt="Yellow and blue book with an orange on the cover and the title 'Blood orange'"
+							/>
+							<h3>Project title</h3>
+							<span>UI, Art decoration</span>
+						</div>
+						<div class="latest-work__card">
+							<img
+								loading="lazy"
+								src="./img/work-second.jpg"
+								alt="Black tube with unknown contents on a bright orange background"
+							/>
+							<h3>Project title</h3>
+							<span>UI, Art decoration</span>
+						</div>
+						<div class="latest-work__card">
+							<img
+								loading="lazy"
+								src="./img/work-third.jpg"
+								alt="An open book in perspective on a white background. The page shows the letter 'D' and a photo of a leather belt"
+							/>
+							<h3>Project title</h3>
+							<span>UI, Art decoration</span>
+						</div>
+						<div class="latest-work__card">
+							<img
+								loading="lazy"
+								src="./img/work-fourth.jpg"
+								alt="The book stands on a table with an orange tablecloth against a dark gray background"
+							/>
+							<h3>Project title</h3>
+							<span>UI, Art decoration</span>
+						</div>
+						<div class="latest-work__card">
+							<img
+								loading="lazy"
+								src="./img/work-fifth.jpg"
+								alt="Open book, close-up on an orange background"
+							/>
+							<h3>Project title</h3>
+							<span>UI, Art decoration</span>
+						</div>
+						<div class="latest-work__card">
+							<img
+								loading="lazy"
+								src="./img/work-sixth.jpg"
+								alt="Three books stand next to each other on a white background"
+							/>
+							<h3>Project title</h3>
+							<span>UI, Art decoration</span>
+						</div>
+					</div>
+				</section>
 				<!-- Clients -->
-				<section>Clients</section>
+				<section class="clients">
+					<h2>Clients</h2>
+					<div class="clients__wrapper">
+						<div class="clients__card">
+							<p>
+								This is a template Figma file, turned into code using
+								Anima. Learn more at AnimaApp.com
+							</p>
+							<div class="clients__card-bottom">
+								<img src="./img/avatar-1.jpg" alt="Girl selfie" />
+								<span class="clients__person-rating">
+									<img
+										src="./img/stars.svg"
+										alt="5 star rating"
+										class="clients__stars"
+									/>
+									<span class="clients__fullname">Gemma Nolen</span>
+									<span class="clients__job">Google</span>
+								</span>
+							</div>
+						</div>
+						<div class="clients__card">
+							<p>
+								This is a template Figma file, turned into code using
+								Anima. Learn more at AnimaApp.com
+							</p>
+							<div class="clients__card-bottom">
+								<img src="./img/avatar-2.jpg" alt="Girl selfie" />
+								<span class="clients__person-rating">
+									<img
+										src="./img/stars.svg"
+										alt="5 star rating"
+										class="clients__stars"
+									/>
+									<span class="clients__fullname">Molly Hendricks</span>
+									<span class="clients__job">Facebook</span>
+								</span>
+							</div>
+						</div>
+						<div class="clients__card">
+							<p>
+								This is a template Figma file, turned into code using
+								Anima. Learn more at AnimaApp.com
+							</p>
+							<div class="clients__card-bottom">
+								<img src="./img/avatar-3.jpg" alt="Girl selfie" />
+								<span class="clients__person-rating">
+									<img
+										src="./img/stars.svg"
+										alt="5 star rating"
+										class="clients__stars"
+									/>
+									<span>Gloria Scott</span>
+									<span>Intel</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
-			<footer id="contact">Contact</footer>
+			<footer class="contact">
+				<div class="contact__left-side">
+					<h2>Lets work together</h2>
+					<p>
+						This is a template Figma file, turned into code using Anima. Learn
+						more at AnimaApp.com This is a template Figma file, turned into
+						code using Anima. Learn more at AnimaApp.com
+					</p>
+					<span class="contact__social-media">
+						<a href="">
+							<img src="./img/icons/discord.svg" alt="Discord icon" />
+						</a>
+						<a href="">
+							<img src="./img/icons/facebook.svg" alt="Facebook icon" />
+						</a>
+						<a href="">
+							<img src="./img/icons/dribble.svg" alt="Dribble icon" />
+						</a>
+						<a href="">
+							<img src="./img/icons/instagram.svg" alt="Instagram icon" />
+						</a>
+						<a href="">
+							<img src="./img/icons/behance.svg" alt="Behance icon" />
+						</a>
+					</span>
+				</div>
+				<form class="contact__form">
+					<input type="text" placeholder="Name" />
+					<input type="email" placeholder="Email" />
+					<textarea
+						placeholder="Type your message here"
+						cols="30"
+						rows="10"
+					></textarea>
+					<button class="contact__submit">Submit</button>
+				</form>
+			</footer>
 		</div>
 	</body>
 </html>

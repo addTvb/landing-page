@@ -1,25 +1,53 @@
+@font-face {
+	font-family: Epilogue;
+	font-display: swap;
+	src: url('../fonts/Epilogue-Medium.ttf');
+}
 :root {
 	--black: #2d2d2d;
 	--white: #fff;
+	--gray: #f3f3f3;
+	--heading-size: 2rem;
 }
 
 * {
 	font-family: 'Epilogue', sans-serif;
+	color: var(--black);
+}
+h2 {
+	margin: 0;
+	font-size: var(--heading-size);
+}
+button,
+a {
+	cursor: pointer;
 }
 
 .wrapper {
-	padding: 0 60px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	max-width: 1100px;
+	row-gap: 150px;
 }
 /* Header */
 .header {
-	width: 100%;
+	width: calc(100% - 180px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 80px;
+	margin-bottom: 90px;
+	padding: 0 50px;
 }
 .header__logo {
-	font-size: 30px;
+	font-size: var(--heading-size);
 }
 .header__nav {
 	display: flex;
@@ -34,8 +62,9 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-evenly;
-    align-items: center;
-    height: 720px;
+	align-items: center;
+	height: auto;
+	row-gap: 3rem;
 }
 .visual-designer__left {
 	display: flex;
@@ -43,17 +72,155 @@
 	justify-content: center;
 }
 .visual-designer__subtitle {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 	margin: 0 0 45px 0; /* margin-bottom */
 }
 .visual-designer__title {
-    width: 463px;
-    font-size: 6.2rem;
+	width: min-content;
+	font-size: 6.2rem;
 	margin: 0 0 50px 0; /* margin-bottom */
 }
 .visual-designer__text {
-    width: 417px;
-    font-size: 1.1rem;
+	width: 417px;
+	font-size: 1.1rem;
 }
-.visual-designer__right {
+/* Companies */
+.companies {
+	display: flex;
+	width: calc(100% - 100px);
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 50px;
+	padding: 0 50px;
+}
+/* About */
+.about {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	row-gap: 50px;
+}
+.about__card {
+	max-width: 250px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+}
+.about__card > h3 {
+	margin: 30px 0 0 0; /* margin-top */
+}
+.about__card > img {
+	max-width: fit-content;
+}
+/* latest-work */
+.latest-work {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 50px;
+}
+.latest-work__grid {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+.latest-work__card > h3 {
+	margin: 25px 0 10px 0; /* top: 25, bottom: 10 */
+}
+/* Clients */
+.clients {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 55px;
+}
+.clients__wrapper {
+	display: flex;
+	column-gap: 45px;
+	row-gap: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.clients__card {
+	height: 400px;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--gray);
+}
+.clients__card > p {
+	max-width: 250px;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+.clients__card-bottom {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 15px;
+}
+.clients__card-bottom > img {
+	border-radius: 50%;
+}
+.clients__person-rating {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+.clients__stars {
+	margin-bottom: 5px;
+}
+/* Footer */
+.contact {
+	margin: 150px 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	row-gap: 4rem;
+}
+.contact__left-side {
+	display: flex;
+	flex-direction: column;
+	row-gap: 35px;
+	max-width: 360px;
+}
+.contact__left-side > p {
+	line-height: 1.7rem;
+}
+.contact__social-media {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	column-gap: 1.2rem;
+}
+.contact__form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	width: 530px;
+}
+.contact__form > input,
+textarea {
+	width: 100%;
+	padding: 1.4rem 2rem;
+	background-color: var(--gray);
+	border: none;
+	outline-color: var(--black);
+}
+.contact__submit {
+	width: fit-content;
+	margin-top: 25px;
+	padding: 1.3rem 4rem;
+	color: var(--white);
+	background-color: var(--black);
+	border: none;
 }
